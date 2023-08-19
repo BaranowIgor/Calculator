@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Maximum Boxes on Pallet</title>
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <h1>Calculate Maximum Boxes on Pallet</h1>
+    <form id="boxForm">
+      <div>
+        <label for="palletLength">Pallet Length (mm):</label>
+        <input type="number" id="palletLength" min="1" required><br>  <!--type="number" used to allow users input only numbers and it tells brousers which keyboard open on phones. This type="number" doesn't make type of this input as a int, it's still string. To make it integer and be able to make calculation I have to make it int. There is 2 ways to do this: by JS parsetInt or .valueAsNumber  -->
+      </div>
+      <div>
+        <label for="palletWidth">Pallet Width (mm):</label>
+        <input type="number" id="palletWidth" min="1" required><br>
+      </div>
+      <div>
+        <label for="palletHeight">Pallet Height (mm):</label>
+        <input type="number" id="palletHeight" min="1" required><br>
+      </div>
+      <div>
+        <label for="boxLength">Box Length (mm):</label>
+        <input type="number" id="boxLength" min="1" required><br>
+      </div>
+      <div>
+        <label for="boxWidth">Box Width (mm):</label>
+        <input type="number" id="boxWidth" min="1" required><br>
+      </div>
+      <div>
+        <label for="boxHeight">Box Height (mm):</label>
+        <input type="number" id="boxHeight" min="1" required><br>
+      </div>
+      <div>
+        <label for="boxWeight">Box Weight (kg):</label>
+        <input type="number" id="boxWeight" min="1" required><br>
+      </div>
+      <div>
+        <label for="maxLoadWeight">Max Load Weight (kg):</label>
+        <input type="number" id="maxLoadWeight" min="1" required><br>
+      </div>
+      <button type="submit" class="calculateBtn">Calculate</button>
+    </form>
+    <div id="error"></div>
+
+    <p id="maxBoxesResult"></p>
+    <p id="maxBoxesDescription"></p>
+    <p id="resultsFreePallet"></p>
+    <p id="resultsFreeHeight"></p>
+    <p id="resultsFreeWidth"></p>
+    <p id="resultsFreeLength"></p>
+
+    <p id="numOfWaysToStackBoxes"></p>
+
+    <p id="resultFirstWay"></p>
+    <p id="maxBoxesOnFloorFirstWay"></p>
+    <p id="maxLayersFirstWay"></p>
+    <p id="instructions"></p>
+
+    <p id="resultSecondWay"></p>
+    <p id="maxBoxesOnFloorSecondWay"></p>
+    <p id="maxLayersSecondWay"></p>
+    <p id="instructionsForFreeHeight"></p>
+
+
+
+</body>
+</html>
